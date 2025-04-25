@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Price Prediction</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Link to JavaScript -->
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Home Price Prediction</h1>
+        
+        <!-- Input for Area -->
+        <div class="input-form">
+            <label for="area">Area (Square Feet):</label>
+            <input type="number" id="area" placeholder="1000">
+        </div>
+
+        <!-- Buttons for BHK -->
+        <div class="bhk-form">
+            <label>BHK:</label>
+            <div class="bhk-buttons">
+                <button class="bhk-btn" data-bhk="1">1</button>
+                <button class="bhk-btn active" data-bhk="2">2</button>
+                <button class="bhk-btn" data-bhk="3">3</button>
+            </div>
+        </div>
+
+        <!-- Buttons for Bathrooms -->
+        <div class="bath-form">
+            <label>Bath:</label>
+            <div class="bath-buttons">
+                <button class="bath-btn" data-bath="1">1</button>
+                <button class="bath-btn active" data-bath="2">2</button>
+                <button class="bath-btn" data-bath="3">3</button>
+                <button class="bath-btn" data-bath="4">4</button>
+                <button class="bath-btn" data-bath="5">5</button>
+            </div>
+        </div>
+
+        <!-- Dropdown for Location -->
+        <div class="location-form">
+            <label for="location">Location:</label>
+            <select id="location">
+                <option value="" disabled selected>Choose a Location</option>
+            </select>
+        </div>
+
+        <!-- Button to Estimate Price -->
+        <div class="estimate-form">
+            <button class="estimate-btn">Estimate Price</button>
+        </div>
+
+        <!-- Result Display -->
+        <div class="result"></div>
+    </div>
+</body>
+</html>
